@@ -1,0 +1,12 @@
+		sub r31, r31, r31
+		
+loop:   ldb r2, (r1)#0
+		jzs fin
+		add r31, r31, #1
+		
+		add r1, r1, #1
+		jmp loop
+fin: 	out r31
+		hlt
+		
+		

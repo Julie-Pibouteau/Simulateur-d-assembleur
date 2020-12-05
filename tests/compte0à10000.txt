@@ -1,0 +1,7 @@
+      in r1
+ici:  sub r2, r1, #10000
+      jzs fin
+      out r1
+      add r1, r1, #1
+      jmp ici
+fin:  hlt
